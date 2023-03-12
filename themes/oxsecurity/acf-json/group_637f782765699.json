@@ -1,0 +1,271 @@
+{
+    "key": "group_637f782765699",
+    "title": "Post Type: Lading Pages",
+    "fields": [
+        {
+            "key": "field_637f7827f8ddf",
+            "label": "Sections",
+            "name": "sections",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_637f7838b5b07": {
+                    "key": "layout_637f7838b5b07",
+                    "name": "hero_lp",
+                    "label": "Hero LP",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_637f89a29fcfe",
+                            "label": "Hero LP",
+                            "name": "hero_lp",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_637f83b488b35"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63835bedc9374": {
+                    "key": "layout_63835bedc9374",
+                    "name": "bullets_grid",
+                    "label": "Bullets Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63835bfac9375",
+                            "label": "Bullets Grid",
+                            "name": "bullets_grid",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_63835b0bd0682"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_638343f8c8f83": {
+                    "key": "layout_638343f8c8f83",
+                    "name": "texts_bullets_grid",
+                    "label": "Texts Bullets Grid",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_638343fec8f84",
+                            "label": "Texts Bullets Grid",
+                            "name": "texts_bullets_grid",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_63832e5e934ac"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6383671d7612d": {
+                    "key": "layout_6383671d7612d",
+                    "name": "testimonials_lp",
+                    "label": "Testimonials LP",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_638367367612e",
+                            "label": "Testimonials LP",
+                            "name": "testimonials_lp",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_638364486785d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63836d95b11d4": {
+                    "key": "layout_63836d95b11d4",
+                    "name": "cta_box",
+                    "label": "CTA Box",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63836d9eb11d5",
+                            "label": "CTA Box",
+                            "name": "cta_box",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_6383564b80b41"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_639acdec6957b": {
+                    "key": "layout_639acdec6957b",
+                    "name": "related_posts",
+                    "label": "Related Posts",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_639ace116957d",
+                            "label": "Related Posts",
+                            "name": "related_posts",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_639acca6a3e58"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63fb35079bffb": {
+                    "key": "layout_63fb35079bffb",
+                    "name": "lp_paragraph",
+                    "label": "LP Paragraph",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_63fb350c9bffc",
+                            "label": "LP Paragraph",
+                            "name": "lp_paragraph",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_63fb343ff310c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "ox_lp"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1677407515
+}

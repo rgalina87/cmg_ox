@@ -1,0 +1,103 @@
+.page-template-page-careers section.section-content.header-section {
+    background-color: #1e144d;
+    max-width: none;
+    color: white;
+    text-align: center;
+    padding-top: 53px;
+    padding-bottom: 73px;
+}
+
+.page-template-page-careers h2.title-header {
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 0;
+}
+
+.page-template-page-careers .subtitle-header p {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    margin-bottom: 33px;
+    margin-top: 10px;
+}
+
+.page-template-page-careers a.cta-header {
+    background-color: #6a2bff;
+    color: white;
+    padding: 16px 21px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 5px;
+}
+
+.page-template-page-careers h2.title-texts-bullets,
+.page-template-page-careers h2.title-job-openings{
+    text-align: center;
+    font-weight: 700;
+}
+
+.page-template-page-careers .subtitle-texts-bullets,
+.page-template-page-careers .subtitle-job-openings{
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #1e144d;
+}
+
+.page-template-page-careers img.image-item-bullet {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    top: 8px;
+}
+
+.page-template-page-careers h3.title-item-bullet {
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #1e144d;
+    margin-bottom: 0;
+}
+
+.page-template-page-careers p.text-item-bullet {
+    margin-top: 9px;
+}
+
+.page-template-page-careers section.section-content.texts-bullets-lp-section {
+    margin-top: 60px;
+}
+
+/*** Position Page ***/
+
+.page-template-page-careers .comeet-social {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .page-template-page-careers h2.title-header {
+        font-weight: 700;
+        font-size: 50px;
+    }
+    .page-template-page-careers .items-texts-bullets {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .page-template-page-careers h2.title-texts-bullets,
+    .page-template-page-careers h2.title-job-openings {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .page-template-page-careers h3.title-item-bullet {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
