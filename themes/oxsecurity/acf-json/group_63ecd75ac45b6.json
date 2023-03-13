@@ -27,7 +27,7 @@
             "label": "Subtitle",
             "name": "subtitle",
             "aria-label": "",
-            "type": "wysiwyg",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,11 +36,11 @@
                 "class": "",
                 "id": ""
             },
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
             "default_value": "",
-            "delay": 0
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": "br"
         },
         {
             "key": "field_63ecd7942e4e8",
@@ -81,5 +81,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676548233
+    "modified": 1678175770
 }

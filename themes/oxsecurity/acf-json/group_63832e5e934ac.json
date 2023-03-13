@@ -1,6 +1,6 @@
 {
     "key": "group_63832e5e934ac",
-    "title": "Section: Texts Bullets Grid",
+    "title": "Section: Careers Texts Bullets Grid",
     "fields": [
         {
             "key": "field_6383536479a7e",
@@ -27,7 +27,7 @@
             "label": "Text Grid Subtitle",
             "name": "text_grid_subtitle",
             "aria-label": "",
-            "type": "wysiwyg",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -37,10 +37,10 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "maxlength": "",
+            "rows": 2,
+            "placeholder": "",
+            "new_lines": "br"
         },
         {
             "key": "field_6383432a5c43b",
@@ -153,5 +153,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1676546621
+    "modified": 1678175616
 }

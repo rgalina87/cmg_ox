@@ -1,0 +1,76 @@
+section.section-content.partnership-partners-section h2  {
+    text-align: center;
+    font-family: "Satoshi", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #1d164d;
+    margin-bottom: 72px;
+}
+
+section.section-content.partnership-partners-section {
+    margin-bottom: 120px;
+    margin-top: 100px;
+}
+
+section.section-content.partnership-partners-section .partners-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 60px;
+}
+
+section.section-content.partnership-partners-section .partner-single img {
+    max-width: 410px;
+    margin-bottom: 20px;
+}
+
+section.section-content.partnership-partners-section .partner-single p {
+    font-family: "Satoshi", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #1d164d;
+    margin-bottom: 20px;
+}
+
+section.section-content.partnership-partners-section .partner-single .partner-read-more {
+    font-family: "Manrope", serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #6837FF;
+    position: relative;
+}
+
+section.section-content.partnership-partners-section .partner-single a.partner-read-more:after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/Arrow.svg");
+}
+
+section.section-content.partnership-paragraph-section p {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #1d164d;
+}
+
+section.section-content.partnership-paragraph-section h4 {
+    font-family: "Satoshi", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 900px) {
+    section.section-content.partnership-partners-section .partners-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
