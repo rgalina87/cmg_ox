@@ -49,6 +49,38 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_640ee1dc1f346": {
+                    "key": "layout_640ee1dc1f346",
+                    "name": "partners_page_intro",
+                    "label": "Partners Page Intro",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_640ee1e11f347",
+                            "label": "Partners Page Intro",
+                            "name": "partners_page_intro",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_640ee1889de53"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_640e03a83b679": {
                     "key": "layout_640e03a83b679",
                     "name": "partners",
@@ -71,6 +103,38 @@
                             },
                             "clone": [
                                 "group_640e02fd4cd77"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_640edb505c5f4": {
+                    "key": "layout_640edb505c5f4",
+                    "name": "partners_page_paragraph",
+                    "label": "Partners Page Paragraph",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_640edb595c5f5",
+                            "label": "Partners Page Paragraph",
+                            "name": "partners_page_paragraph",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_640edaa45400a"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -129,13 +193,15 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1678640274
+    "modified": 1678741537
 }

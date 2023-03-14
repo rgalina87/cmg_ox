@@ -1,5 +1,5 @@
 <?php
-define( 'THEME_FILES_VERSION', '6.1.9');
+define( 'THEME_FILES_VERSION', '6.2.2');
 
 if (!function_exists('ox_include_css_theme')) {
 
@@ -11,7 +11,7 @@ if (!function_exists('ox_include_css_theme')) {
         wp_enqueue_style('partnership-style', get_stylesheet_directory_uri() . '/css/partnership.css', array(), THEME_FILES_VERSION);
     }
 
-    wp_dequeue_style('elementor-pro-css');
+    // wp_dequeue_style('elementor-pro-css');
 
 
     add_action('wp_enqueue_scripts', 'ox_include_css_theme');

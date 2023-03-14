@@ -17,8 +17,8 @@
                         <?php if ($i['description']) { ?>
                             <p class="partner-description"><?= $i['description'] ?></p>
                         <?php } ?>
-                        <?php if ($i['description']) { ?>
-                            <a class="partner-read-more" href="<?= $i['read_more']['url'] ?>"><?= $i['read_more']['title'] ?></a>
+                        <?php if (isset($i['read_more']['url'])) { ?>
+                            <a class="partner-read-more" href="<?= $i['read_more']['url'] ?>">Read More</a>
                         <?php } ?>
                     </div>
 
