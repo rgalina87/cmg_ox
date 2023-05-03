@@ -14,7 +14,6 @@
 }
 
 .page-template-page-careers .subtitle-header p {
-  font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -27,7 +26,7 @@
   background-color: #6a2bff;
   color: white;
   padding: 16px 21px;
-  font-family: Inter, sans-serif;
+
   font-size: 16px;
   line-height: 22px;
   border-radius: 5px;
@@ -36,6 +35,12 @@
 }
 .page-template-page-careers .section-content.header-image-section__image {
   max-width: 100%;
+  margin-bottom: 60px;
+}
+.page-template-page-careers .section-content.header-image-section__image img {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: block;
 }
 .page-template-page-careers h2.title-texts-bullets,
 .page-template-page-careers h2.title-job-openings {
@@ -46,7 +51,7 @@
 .page-template-page-careers .subtitle-texts-bullets,
 .page-template-page-careers .subtitle-job-openings {
   text-align: center;
-  font-family: Inter, sans-serif;
+
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -77,19 +82,188 @@
   margin-top: 60px;
 }
 
+/***Filters***/
+.job-openings-filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-openings-filter {
+  width: 30%;
+  margin: 10px 0;
+}
+.comeet-list .comeet-position a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 12px;
+  transition: 0.3s all;
+}
+
+.comeet-list .comeet-position a:hover {
+  background: #6a2bff;
+  color: #fff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.page-template-page-careers .job-openings-filters {
+  display: flex;
+  justify-content: unset;
+  gap: 20px;
+}
+
+.page-template-page-careers .job-openings-filter {
+  width: 100%;
+  margin: 10px 0;
+  max-width: 378px;
+}
+
+.page-template-page-careers div#job-openings-wrap {
+  margin-top: 30px;
+}
+
+.page-template-page-careers input#search-term::placeholder,
+.page-template-page-careers select {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #1e144d;
+}
+
+.page-template-page-careers input#search-term {
+  background-image: url("../images/Search.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 18px);
+  border: 1px solid #cab9ff;
+  padding: 13px 20px;
+}
+
+.page-template-page-careers select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  background-image: url("../images/chevron_down.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 18px);
+  background-position-y: center;
+  border: 1px solid #cab9ff;
+  padding: 14px 20px;
+  background-color: white;
+}
+
+#ox-comeet-position-list {
+  padding: 30px 0;
+}
+
+.page-template-page-careers select:hover {
+  cursor: pointer;
+}
+
+.page-template-page-careers .comeet-list .comeet-position a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  transition: 0.3s all;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1e144d;
+  position: relative;
+}
+
+.page-template-page-careers .comeet-list .comeet-position a::after {
+  content: "";
+  background-image: url("../images/Arrow.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  padding-left: 40px;
+  right: 0;
+}
+.page-template-page-careers .comeet-list .comeet-position a:hover::after {
+  filter: brightness(100);
+}
+
+.page-template-page-careers .comeet-list .comeet-position a:hover {
+  background: #6a2bff;
+  color: #fff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.page-template-page-careers .comeet-list li {
+  margin-bottom: 40px;
+}
+
 /*** Position Page ***/
 
 .page-template-page-careers .comeet-social {
   display: none;
 }
+.page-template-page-careers .comeet-position a div {
+  width: 100%;
+}
+.page-template-page-careers .comeet-position-name {
+  max-width: 356px;
+}
+.page-template-page-careers .ox-comeet-position-meta.department {
+  max-width: 356px;
+}
+.page-template-page-careers .ox-comeet-position-meta.location {
+  max-width: 255px;
+}
+.page-template-page-careers .ox-comeet-position-meta.location::before {
+  content: "";
+  background-image: url("../images/location-marker.svg");
+  width: 16px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.page-template-page-careers a:hover .ox-comeet-position-meta.location::before {
+  filter: brightness(100);
+}
+
+.page-template-page-careers-job-page .all-jobs-link {
+  border: none;
+  margin-top: 80px;
+}
+
+.page-template-page-careers-job-page .comeet-outer-wrapper .comeet-position-name {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 20px 0;
+  line-height: 44px;
+}
+.page-template-page-careers-job-page .comeet-outer-wrapper .comeet-position-info h4, 
+.page-template-page-careers-job-page .comeet-outer-wrapper .comeet-apply h4 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  margin: 40px 0 10px;
+}
 
 @media screen and (max-width: 1100px) {
+  .page-template-page-careers .section-content.header-image-section__image img{
+    max-width: 100%;
+  }
   .page-template-page-careers h2.title-header {
     font-weight: 700;
     font-size: 50px;
   }
   .page-template-page-careers .items-texts-bullets {
     grid-template-columns: 1fr;
+  }
+  .page-template-page-careers .comeet-list .comeet-position a {
+    gap: 20px;
   }
 }
 
@@ -103,5 +277,27 @@
   .page-template-page-careers h3.title-item-bullet {
     font-size: 18px;
     line-height: 25px;
+  }
+
+  .page-template-page-careers .job-openings-filters {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .page-template-page-careers .comeet-list .comeet-position a {
+    flex-direction: column;
+    align-items: baseline;
+    row-gap: 10px;
+  }
+
+  .page-template-page-careers .comeet-list .comeet-position a::after {
+    padding-left: 40px;
+    top: 42%;
+    position: absolute;
+  }
+
+  .page-template-page-careers .comeet-position-meta.location,
+  .page-template-page-careers .comeet-position-meta.department {
+    position: unset;
   }
 }

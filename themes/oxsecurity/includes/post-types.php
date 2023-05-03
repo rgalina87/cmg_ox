@@ -1,9 +1,39 @@
 <?php
 
+
+/**
+ * Register Custom Taxonomies
+ */
+function ox_register_custom_taxonomies(){
+    // Add new taxonomy, make it hierarchical (like categories)
+     $labels = array(
+         'name'              => _x( 'Categories', 'taxonomy general name', 'ox' ),
+         'singular_name'     => _x( 'category', 'taxonomy singular name', 'ox' ),
+         'search_items'      => __( 'Search Glossary categories', 'ox' ),
+         'all_items'         => __( 'All Glossary categories', 'ox' ),
+         'edit_item'         => __( 'Edit Review Source', 'ox' ),
+         'update_item'       => __( 'Update Review Source', 'ox' ),
+         'add_new_item'      => __( 'Add New Source', 'ox' ),
+         'not_found'         => __( 'No Glossary categories Found!', 'ox' ),
+     );
+     $args = array(
+         'hierarchical'      => true, // Like Category Taxonomy. False is like Tag taxonomy.
+         'labels'            => $labels,
+         'show_ui'           => true,
+         'show_admin_column' => true,
+         'show_in_rest'      => true,
+         'has_archive'       => true,
+         'rewrite'           => array('slug' => 'glossary-cat')
+     );
+     register_taxonomy( 'glossary_category', array( 'ox_glossary' ), $args ); 
+ }
+ add_action('init', 'ox_register_custom_taxonomies');
+
+
+/**
+ * Register Custom Post Types
+ */
 if ( ! function_exists( 'ox_register_post_types' ) ) {
-    /**
-     * Register Custom Post Types
-     */
     function ox_register_post_types() {
 
         $post_types = [
@@ -30,10 +60,12 @@ if ( ! function_exists( 'ox_register_post_types' ) ) {
                 ],
                 'public'        => true,
                 'menu_position' => 42,
-                'has_archive'   => false,
+                'has_archive'   => true,
                 'menu_icon'     => 'dashicons-text-page',
-                'rewrite'       => [ 'slug' => __( 'glossary', 'ox' ), 'with_front' => false ],
+                'rewrite'       => array( 'slug' => 'glossary', 'with_front' => false ),
                 'supports'      => array( 'title', 'editor', 'thumbnail' ),
+
+                'taxonomies'    => array( 'glossary_category' ),
             ],
 
         ];
@@ -45,5 +77,4 @@ if ( ! function_exists( 'ox_register_post_types' ) ) {
 
     add_action( 'init', 'ox_register_post_types' );
 }
-
 ?>

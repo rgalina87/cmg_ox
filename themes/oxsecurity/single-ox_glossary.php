@@ -1,6 +1,35 @@
 <?php get_header();?>
 
 <h1><?= get_field('test') ?> </h1>
+
+<section class="section-content category-single-glossary">
+    <div class="content-container">
+        <ul id="glossary-terms">
+            <?php
+            $pid = get_the_ID();
+            //error_log(print_r($meta,true));
+            $postTerms=wp_get_post_terms( $pid, "glossary_category" );
+            ?>
+            <!-- Glossary Item -->
+            <li class="item-wrap">
+
+                <!-- Post categories -->
+                <ul class="item-terms">
+                    <?php
+                    foreach($postTerms as $pstTrm){
+                        // var_dump($pstTrm);
+                        ?>
+                        <li onclick='ajaxGetCat("<?= $pstTrm->slug ?>")'><?= $pstTrm->name ?></li>
+                        <?php
+                    }
+                    ?>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
 <div class="glossary-main-content">
 <section class="section-content content-glossary">
     <div class="content-container">
@@ -32,7 +61,7 @@
 </section>
 </div>
 
-<section class="section-content faq-glossary">
+<section class="section-content faq-glossary" itemscope itemtype="https://schema.org/FAQPage">
     <div class="content-container">
         <h2 class="faq-title"><?php echo get_field('faq_title'); ?></h2>
         <div class="faq-list">
@@ -42,12 +71,14 @@
                 foreach ($faq as $i) {
                     if (isset($i)) {
                         ?>
-                        <div class="faq-item">
+                        <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                             <?php if($i['faq_question']) { ?>
-                                <p class="question"><?= $i['faq_question'] ?></p>
+                                <p itemprop="name" class="question"><?= $i['faq_question'] ?></p>
                             <?php } ?>
                             <?php if($i['faq_answer']) { ?>
-                                <p class="answer"><?= $i['faq_answer'] ?></p>
+                            <p itemscope itemprop="answer" itemtype="https://schema.org/Answer" class="answer">
+                                <span  itemprop="text"><?= $i['faq_answer'] ?></span>
+                            </p>
                             <?php } ?>
                         </div>
                         <?php

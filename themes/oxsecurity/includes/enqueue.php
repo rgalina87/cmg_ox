@@ -1,5 +1,5 @@
 <?php
-define( 'THEME_FILES_VERSION', '6.2.2');
+define( 'THEME_FILES_VERSION', '6.2.8');
 
 if (!function_exists('ox_include_css_theme')) {
 

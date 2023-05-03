@@ -2,7 +2,7 @@
 		<?php if ($show_all_link) : ?>
 			<?php $post = get_post(get_the_ID()); ?>
 			<div class="all-jobs-link">
-				<a href="<?php echo site_url() . '/careers'; ?>">&larr; All Jobs</a>
+				<a href="<?php echo site_url() . '/careers/'; ?>">&larr; All Jobs</a>
 			</div>
 		<?php endif; ?>
 
